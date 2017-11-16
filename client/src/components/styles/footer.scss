@@ -1,0 +1,75 @@
+.footer {
+	// background-color: #0f0f0f;
+	position: relative;
+	width: 100%;
+
+	& .footerHolder {
+		// padding-top: 100px;
+		color: white;
+		width: 80%;
+		margin: 0 auto;
+
+		& .topFoot {
+			text-align: center;
+			font-family: 'plume', sans-serif;
+			font-size: 26px;
+			padding-top: 200px;
+		}
+
+		& .getInTouch {
+			text-align: center;
+			font-family: 'sofialight';
+			padding-top: 100px;
+			font-size: 21px;
+		}
+
+		& .lineBreak {
+			border-bottom: 2px solid #4e4e4e;
+			padding-top: 60px;
+		}
+
+		& .getInTouchInput {
+			width: 320px;
+			// background-color: #f50057;
+			margin: 30px auto;
+			padding: 12px;
+			font-family: inherit;
+			font-size: 30px;
+			text-align: center;
+			border: 2px solid #42a5f5;
+			border-radius: 35px;
+			letter-spacing: 0px;
+			transition: 0.6s all cubic-bezier(0.19, 1, 0.22, 1);
+		}
+
+		& .getInTouchInput:hover {
+			background-color: #42a5f5;
+			color: white;
+		}	
+
+		& .bottomHolder {
+			margin-top: 35px;
+			padding-bottom: 35px;
+			font-size: 13px;
+
+			& .leftFoot {
+				float: left;
+				font-family: inherit;
+			}
+
+			& .rightFoot {
+				float: right;
+
+				& ul > li {
+					display: inline-block;
+					font-family: inherit;
+				}
+
+				& li:nth-child(2) {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+			}	
+		}
+	}
+}

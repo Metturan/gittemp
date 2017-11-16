@@ -1,0 +1,23 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.52 174.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff6fbc;
+      }
+
+      .cls-2 {
+        fill: #5ecaeb;
+      }
+
+      .cls-3 {
+        fill: #6b66c4;
+      }
+    </style>
+  </defs>
+  <title>numstock4</title>
+  <g>
+    <path class="cls-1" d="M67.34,77.12A13.67,13.67,0,0,1,53.67,63.48V29.61a22.21,22.21,0,0,0-44.43,0V63.48a58.15,58.15,0,0,0,58.11,58.07h13V77.12Z" transform="translate(-9.24 -7.4)"/>
+    <path class="cls-2" d="M102.55,7.4A22.21,22.21,0,0,0,80.33,29.61V77.12H93.26a22.21,22.21,0,0,1,0,44.43H80.33v37.93a22.21,22.21,0,1,0,44.43,0V29.61A22.21,22.21,0,0,0,102.55,7.4Z" transform="translate(-9.24 -7.4)"/>
+    <path class="cls-3" d="M115.47,99.33A22.21,22.21,0,0,0,93.26,77.12H80.33v44.43H93.26A22.21,22.21,0,0,0,115.47,99.33Z" transform="translate(-9.24 -7.4)"/>
+  </g>
+</svg>

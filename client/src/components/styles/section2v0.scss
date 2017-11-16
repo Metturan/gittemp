@@ -1,0 +1,65 @@
+.section2 {
+	color: #fff;
+	background-color: #131313;
+
+	& .firstSec {
+		width: 33%;
+		float: left;
+		transition: all 0.4s linear;
+		transition-delay: 0.1s;
+		opacity: 0;
+		transform: translateY(0);
+
+		& div {
+			font-family: sofiabold;
+			font-size: 35px;
+		}
+
+		&.active {
+			transform: translateY(-30px);
+			opacity: 1;
+		}
+	}
+
+	& .secSec {
+		width: 66%;
+		float: right;
+	}
+
+	& .rows {
+		padding-bottom: 50px;
+		transition: all 0.4s linear;
+		transition-delay: 0.2s;
+		opacity: 0;
+		transform: translateY(0);
+
+		&.active {
+			transform: translateY(-30px);
+			opacity: 1;
+		}
+
+		& h2 {
+			font-family: sofiaproregular;
+			font-size: 20px;
+		}
+
+		& p {
+			font-family: sofialight;
+			line-height: 1.8;
+			font-size: 13px;
+			letter-spacing: 0.3px;
+			color: #7e7e7e;
+		}
+	}
+
+	& .cols {
+		width: 50%;
+	}
+}
+
+.section2Wrap {
+	width: 70%;
+	margin: 0 auto;
+	height: 100%;
+	padding: 100px 0;
+}

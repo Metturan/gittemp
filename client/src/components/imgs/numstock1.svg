@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 450 450">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        mix-blend-mode: multiply;
+        fill: url(#radial-gradient);
+      }
+
+      .cls-4 {
+        fill: #6b66c4;
+      }
+
+      .cls-5 {
+        fill: #ff6fbc;
+      }
+
+      .cls-6 {
+        fill: #5ecaeb;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="225.4" cy="938.17" r="126.83" gradientTransform="translate(57.28 246.08) scale(0.74 0.12)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d4d4d4"/>
+      <stop offset="0.47" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+  </defs>
+  <title>numstock1</title>
+  <g class="cls-1">
+    <g id="Layer_1" data-name="Layer 1">
+      <rect class="cls-2" width="450" height="450"/>
+      <rect class="cls-3" x="127" y="342.82" width="196" height="28.86"/>
+      <g>
+        <path class="cls-4" d="M246.56,174a22.14,22.14,0,0,0,6.16-15.59c0,.08,0,.15,0,.23a22.21,22.21,0,0,0-44.43,0v53.52a22.27,22.27,0,0,0,6-4.44Z" transform="translate(0)"/>
+        <path class="cls-5" d="M208.3,158.61a22.14,22.14,0,0,1,6.33-15.52l-.16.16L182.19,177a22.22,22.22,0,0,0,26.1,35.17Z" transform="translate(0)"/>
+        <path class="cls-6" d="M252.72,158.38A22.14,22.14,0,0,1,246.56,174l-32.27,33.71a22.27,22.27,0,0,1-6,4.44v76.35a22.21,22.21,0,1,0,44.43,0V158.61C252.72,158.53,252.72,158.46,252.72,158.38Z" transform="translate(0)"/>
+      </g>
+    </g>
+  </g>
+</svg>

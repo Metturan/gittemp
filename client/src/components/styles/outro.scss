@@ -1,0 +1,68 @@
+.outroCont {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-color: #000;
+
+	& .fontStyle {
+		font-family: 'sofiabold';
+		font-size: 140px;
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0.85); 
+		color: #fff;
+		white-space: nowrap;
+		transition: all 0.3s linear;
+		opacity: 0;
+		cursor: pointer;
+
+		&.active {
+			opacity: 1;
+			top: 50%;
+			transform: translate(-50%, -50%) scale(1);
+		}
+	}
+}
+
+.bottomHolder {
+	padding-bottom: 35px;
+	padding-top: 20px;
+	border-top: 1px solid #424242;
+	font-size: 13px;
+	width: 85%;
+	color: #fff;
+	font-family: sofiaproregular;
+	margin: 0 auto;
+	background-color: #000;
+
+	& .leftFoot {
+		float: left;
+		font-family: inherit;
+	}
+
+	& .rightFoot {
+		float: right;
+
+		& ul > li {
+			display: inline-block;
+			font-family: inherit;
+		}
+
+		& li:nth-child(2) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}	
+}
+
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$mobile: "(min-width: 320px) and (max-width: 768px)";
+
+@media #{$tablet} {
+	body {
+		& .outroCont .fontStyle {
+			font-size: 93px;
+		}
+	}
+}

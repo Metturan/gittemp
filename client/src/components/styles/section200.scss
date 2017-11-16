@@ -1,0 +1,107 @@
+.skillsContainer {
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+
+	& .multiBox {
+		padding-top: 30px;
+		width: 50%;
+		display: inline-block;
+		background-color: #0f0f0f;
+		font-family: inherit;
+		font-size: 13px;
+		text-align: center;
+
+		& li {
+			line-height: 1.6;
+		}
+	}
+}
+
+.section2 {
+	padding-bottom: 80px;
+	background-color:#0f0f0f;
+	padding-top: 100px;
+	transition: all 0.3s linear;
+
+	&.active {
+		background-color: white;
+	}
+
+	.firstHalf {
+		padding-top: 100px;
+		float: left;
+		color: white;
+		width: 49%;
+
+		.cap {
+			font-size: 40px;
+			padding-left: 150px;
+			font-family: inherit;
+			text-transform: uppercase;
+		}
+	}
+
+	.secondHalf {
+		padding-top: 100px;
+		float: right;
+		color: white;
+		width: 49%;
+		padding-right: 100px;
+		box-sizing: border-box;
+
+		.titlecap {
+			font-family: inherit;
+			font-size: 20px;
+		}
+
+		.paracap {
+			font-family: inherit;
+			font-size: 13px;
+			padding-top: 10px;
+			line-height: 1.8;
+		}
+		.contentdiv {
+			padding-top: 60px;
+		}
+	}
+
+	.whatwedo {
+		color: black;
+		font-family: inherit;
+		font-size: 80px;
+		letter-spacing:2px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 550px;
+		background-color: transparent;
+		padding: 10px 20px;
+		text-align: center;
+	}
+
+	.questions {
+		text-align:center;
+		font-size: 55px;
+		font-family: inherit;
+		line-height: 1.2;
+		margin-top: 60px;
+
+		p {
+			opacity: 0;
+			transform: translateY(40%);
+			transition: all 1.4s ease-out;
+
+			&.active {
+				opacity: 1;
+				transform: translateY(0%);
+			}
+		}
+	}
+
+	& .lineBreak {
+		width: 80%;
+		margin: 0 auto;
+		border-bottom: 2px solid #2d2d2d;
+		padding-top: 80px;
+	}
+}

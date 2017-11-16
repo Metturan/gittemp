@@ -1,0 +1,248 @@
+.contactContainer {
+	background-color: #121212;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	& .errMark {
+		color: #c70202;
+		font-size: 12px;
+		font-family: 'sofialight';
+		padding: 0px 0;
+		letter-spacing: 0.5px;
+		width: 48%;
+		opacity: 1;
+	}
+
+	& .contactTitle {
+		margin-top: 150px;
+
+		& h1 {
+			font-family: 'trump';
+			font-size: 90px;
+			color: #fff;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		& .dash {
+			width: 80px;
+			height: 5px;
+			margin: 30px auto;
+			background-color: rgba(0, 101, 255, 1);
+		}
+	}
+}
+
+.formLayout {
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 100px;
+	color: white;
+	box-sizing: border-box;
+	margin: 0 auto;
+
+	& .formRow {
+		transition: all 0.3s;
+
+		&.errorInfo {
+			margin-bottom: 10px;
+		}
+	}
+
+	& .errMsg {
+		width: 48%;
+
+		& div {
+			color: #c70202;
+			font-size: 12px;
+			font-family: 'sofialight';
+			padding: 0px 0;
+			letter-spacing: 0.5px;
+			width: 48%;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.5s linear;
+
+			&.active {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	& .submit {
+		margin: 30px auto 100px auto;
+		width: 200px;
+		border: none;
+		height: 60px;
+		background-color: rgba(0, 101, 255, 1);
+		color: #fff;
+		font-size: 17px;
+		font-family: 'sofiaproregular';
+		letter-spacing: 0.5px;
+		display: block;
+		cursor: pointer;
+	}
+
+	& .descriptionRow {
+		transition: all 0.3s;
+
+		&.errorInfo {
+			padding-bottom: 10px;
+		}
+
+		& .formInput {
+			width: 100%;
+			height: 220px;
+			margin: 10px 0 8px 0;
+		}
+	}
+
+	& .formInput {
+		position: relative;
+		width: 49%;
+		height: 60px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		& label {
+			position: absolute;
+			color: #fff;
+			padding-left: 15px;
+			font-family: sofialight;
+			letter-spacing: 1px;
+			font-size: 17px;
+			display: block;
+			box-sizing: border-box;
+			width: 100%;
+			top: 20px;
+			transition: all 0.3s ease;
+			transform-origin: left;
+
+			&.active {
+				top: 7px;
+				transform: scale(0.7);
+			}
+		}
+
+		& input, & textarea {
+			width: 100%;
+			background-color: transparent;
+			border: 1px solid #5e5e5e;
+			color: #fff;
+			height: 100%;
+			padding-top: 15px;
+			padding-left: 10px;
+			font-size: 16px;
+			font-family: 'sofialight';
+			outline: none;
+			box-sizing: border-box;
+
+			&.mark {
+				border: 1px solid #c70202;
+			}
+		}
+
+		& textarea {
+			padding-top: 32px;
+			resize: none;
+		}
+
+		& .Select-control {
+			border-radius: 0px;
+			border: 1px solid #5e5e5e;
+			background-color: transparent;
+			padding-top: 15px;
+			padding-left: 10px;
+			font-size: 16px;
+			font-family: 'sofialight';
+			outline: none;
+			height: 62px;
+
+			& .Select-value-label {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				padding-top: 17px;
+				color: #fff !important;
+			}
+
+			& .Select-arrow-zone {
+				position: absolute;
+				top: 50%;
+				right: 0%;
+				transform: translateY(-50%);
+			}
+
+			& input {
+				border: none;
+			}
+		}
+	}
+}
+
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$mobile: "(min-width: 320px) and (max-width: 768px)";
+
+@media #{$mobile} {
+	.mobileOnly {
+		display: block;
+	}
+	.nonmob {
+		display: none;
+	}
+	.contactContainer {
+		.errMark {
+			padding: 3px 0;
+			width: 100%;
+		}
+		.contactTitle {
+			h1 {
+				font-size: 53px;
+			}
+		}
+	}
+	.formLayout {
+		width: 80%;
+		padding-left: 0;
+		padding-right: 0;
+
+		.descriptionRow {
+			.formInput {
+				margin: 15px 0 2px 0;
+			}
+		}
+
+		.formRow.errorInfo {
+			margin-bottom: 0px;
+		}
+
+		.submit {
+			width: 165px;
+			height: 54px;
+		}
+
+		.formInput {
+			float: none;
+			width: 100%;
+			height: 50px;
+			margin-top: 15px;
+			margin-bottom: 0px;
+			transition: all 0.2s linear;
+
+			&.mv {
+				margin-bottom: 35px;
+			}
+
+			label {
+				font-size: 13px;
+			}
+
+			.Select-control {
+				height: 52px;
+			}
+		}
+	}
+}

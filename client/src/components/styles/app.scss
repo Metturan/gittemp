@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.nonmob {
+  display: block;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fClear {
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.fw {
+  width: 100%;
+}
+
+.bcgb {
+  background-color: #000;
+}
+
+.db {
+  display: block;
+}
+
+.oh {
+  overflow: hidden;
+}
+
+/* FONTS STYLE */
+@font-face {
+  font-family: apercu;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/aperculight.eot');
+  src: url('../fonts/aperculight.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/aperculight.woff'),
+       url('../fonts/aperculight.ttf'), 
+       url('../fonts/aperculight.svg'); 
+}
+
+@font-face {
+  font-family: apercuMedium;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/apercumedium.eot');
+  src: url('../fonts/apercumedium.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/apercumedium.woff'),
+       url('../fonts/apercumedium.ttf'), 
+       url('../fonts/apercumedium.svg'); 
+}
+
+@font-face {
+  font-family: waskBold;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/wask_new_bold-webfont.eot');
+  src: url('../fonts/wask_new_bold-webfont.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/wask_new_bold-webfont.woff');
+}
+
+@font-face {
+  font-family: sofiaProMedium;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/sofiapro-medium.eot');
+  src: url('../fonts/sofiapro-medium.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/sofiapro-medium.woff'),
+       url('../fonts/sofiapro-medium.ttf'), 
+       url('../fonts/sofiapro-medium.svg'); 
+}
+
+@font-face {
+  font-family: sofiaLight;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/sofiapro-light-webfont.eot');
+  src: url('../fonts/sofiapro-light-webfont.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/sofiapro-light-webfont.woff'),
+       url('../fonts/sofiapro-light-webfont.ttf'), 
+       url('../fonts/sofiapro-light-webfont.svg'); 
+}
+
+@font-face {
+  font-family: sofiaBold;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/sofiapro-bold-webfont.eot');
+  src: url('../fonts/sofiapro-bold-webfont.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/sofiapro-bold-webfont.woff'),
+       url('../fonts/sofiapro-bold-webfont.ttf'), 
+       url('../fonts/sofiapro-bold-webfont.svg'); 
+}
+
+@font-face {
+  font-family: sofiaProRegular;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/sofiapro-regular.eot');
+  src: url('../fonts/sofiapro-regular.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/sofiapro-regular.woff'),
+       url('../fonts/sofiapro-regular.ttf'), 
+       url('../fonts/sofiapro-regular.svg'); 
+}
+
+@font-face {
+  font-family: deValencia;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/devalencia-webfont.eot');
+  src: url('../fonts/devalencia-webfont.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/devalencia-webfont.woff'),
+       url('../fonts/devalencia-webfont.ttf'), 
+       url('../fonts/devalencia-webfont.svg'); 
+}
+
+@font-face {
+  font-family: plume;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/plume.eot');
+  src: url('../fonts/plume.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/plume.woff'),
+       url('../fonts/plume.ttf'), 
+       url('../fonts/plume.svg'); 
+}
+
+@font-face {
+  font-family: chronicleDisplay;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/ChronicleDisplay-Light.eot');
+  src: url('../fonts/ChronicleDisplay-Light.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/ChronicleDisplay-Light.woff'),
+       url('../fonts/ChronicleDisplay-Light.ttf'), 
+       url('../fonts/ChronicleDisplay-Light.svg'); 
+}
+
+@font-face {
+  font-family: portrait;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/portraitlight.eot');
+  src: url('../fonts/portraitlight.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/portraitlight.woff') format('woff'),
+       url('../fonts/portraitlight.ttf') format('truetype'),
+       url('../fonts/portraitlight.svg') format('svg');
+}
+
+@font-face {
+  font-family: trump;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/trump_gothic_east_bold.woff') format('woff'),
+       url('../fonts/trump_gothic_east_bold.ttf') format('truetype');
+}
+
