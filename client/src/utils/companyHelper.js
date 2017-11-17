@@ -1,5 +1,5 @@
 import {TweenMax, TimelineLite, Power4} from 'gsap';
-import SplitText from 'gsap/SplitText';
+import SplitText from './SplitText';
 
 
 export function companyAnim() {

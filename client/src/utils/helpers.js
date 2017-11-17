@@ -1,5 +1,5 @@
 import {TweenMax, TimelineLite, Power2, Power4, Circ} from 'gsap';
-import SplitText from 'gsap/SplitText';
+import SplitText from './SplitText';
 
 function random(min, max){
 	return (Math.random() * (max - min)) + min;
