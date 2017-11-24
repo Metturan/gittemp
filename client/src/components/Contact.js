@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import Select from 'react-select';
 import axios from 'axios';
-import 'react-select/dist/react-select.css';
+import './styles/select.scss';
 import {withRouter} from 'react-router-dom';
+import {TweenMax, Power2} from 'gsap';
 import Header from './Header';
 import './styles/contact.scss';
 import {introContact} from '../utils/contactHelper';
@@ -99,7 +100,8 @@ class Contact extends Component {
 	    const {email, name, company, phone, budget, type, details} = this.state.fields;
 	    axios.post('api/contact', {email, name, company, phone, budget, type, details});
 
-	    return this.props.history.push('/');
+	    // return this.props.history.push('/');
+	    TweenMax.to('.submitOver', 0.4, {autoAlpha: 1, ease:Power2.easeNone})
 
 	  }
 	  handleBlur = (e) => {
@@ -148,6 +150,9 @@ class Contact extends Component {
 					</div>
 					<div className="formLayout">
 					    <div className="FormGroup">
+					    	<div className="submitOver">
+
+					    	</div>
 					        <form onSubmit={this.handleSubmit} >
 					        	<div className={'formRow ' + (errors.name && this.state.touched.name ? "errorInfo" : null) }>
 						          <div className={'formInput fl ' + (errors.name && this.state.touched.name ? 'mv' : null)}>

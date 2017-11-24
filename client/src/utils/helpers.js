@@ -28,10 +28,8 @@ export function showUp() {
 
 	function activeAnimate() {
 		Array.from(arrayOfItems).forEach( e => {
-			// const slideInAt = (window.scrollY + window.innerHeight);
 			const TopOfElement = e.getBoundingClientRect().top - window.innerHeight;
 			const isTopishShown = TopOfElement < 0;
-			// const isNotScrolledPast = window.scrollY < elementBottom;
 
 			if(isTopishShown) {
 				e.classList.add('active');
@@ -39,18 +37,6 @@ export function showUp() {
 		});
 	}
 	window.addEventListener('scroll', debounce(activeAnimate));
-}
-
-export function burgerClick() {
-	const burger = document.querySelector('.burger'),
-		  top = document.querySelector('.top'),
-		  bottom = document.querySelector('.bottom'),
-		  middle = document.querySelector('.middle');
-
-	burger.classList.add('menu');
-	top.classList.add('menu');
-	middle.classList.add('menu');
-	bottom.classList.add('menu');
 }
 
 export function introText() {
@@ -72,7 +58,7 @@ export function squiggleLogo() {
 
 export function bigTxtAnim() {
 	const bigOutro = document.querySelector('.fontStyle');
-	// const splitTxt = new SplitText(bigOutro, {type: 'chars'});
+	const splitTxt = new SplitText(bigOutro, {type: 'chars'});
 	const outroArray = bigOutro.children;
 	// var colors = ["red", "blue", "green", "purple", "gray", "yellow", "orange"];
 	const tlOutro = new TimelineLite({paused:true});
@@ -96,7 +82,11 @@ export function bigTxtAnim() {
 				ease:Power4.easeOut,
 			});
 		});
-		setTimeout(function() {TweenMax.set(outroArray, {display:'none'})}, 400)
+		TweenMax.to('.bottomHolder', 0.4, {autoAlpha: 0, ease:Power2.easeNone, y: 20});
+		setTimeout(function() {
+			TweenMax.set(outroArray, {display:'none'});
+			// this.props.history.push('/contact');
+		}, 350)
 	});
 }
 

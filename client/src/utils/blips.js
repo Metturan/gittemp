@@ -26,33 +26,6 @@ export function effect() {
 		return Math.floor((Math.random() * (max - min + 1))  + min);
 	};
 
-	// var mouse = {x: 0, y: 0};
-
-	// function mousePos() {
- //    	canvas.addEventListener('mousemove', function (event) {
- //    		var x, y;
- //    		if (event.pageX || event.pageY) {
- //    			x = event.pageX;
- //    			y = event.pageY;
- //    		} else {
- //    			x = event.clientX + document.body.scrollLeft +
- //    			document.documentElement.scrollLeft;
- //    			y = event.clientY + document.body.scrollTop +
- //    			document.documentElement.scrollTop;
- //    		}
-
- //    		x -= canvas.offsetLeft;
- //    		y -= canvas.offsetTop;
-	// 		mouse.x = x;
- //    		mouse.y = y;
-
- //    		console.log(mouse.x, mouse.y);
-	// 	}, false);
-
-	// 	return mouse;
-	// };
-	// mousePos();
-
 	var Blip = function(x, y) {
 		this.x = x;
 		this.y = y;

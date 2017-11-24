@@ -1,5 +1,5 @@
 import React from 'react';
-import mac3 from './imgs/mac3.jpeg';
+import mac3 from './imgs/mac3.jpg';
 import './styles/footer2.scss';
 
 const Footer2 = () => {

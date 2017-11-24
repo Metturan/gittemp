@@ -2,7 +2,7 @@
 	height: 100vh;
 	width: 100%;
 	position: relative;
-	background-color: #000;
+	background-color: #121212;
 
 	& .fontStyle {
 		font-family: 'sofiabold';
@@ -34,7 +34,7 @@
 	color: #fff;
 	font-family: sofiaproregular;
 	margin: 0 auto;
-	background-color: #000;
+	background-color: #121212;
 
 	& .leftFoot {
 		float: left;
@@ -47,6 +47,11 @@
 		& ul > li {
 			display: inline-block;
 			font-family: inherit;
+			transition: all 0.2s linear;
+
+			&:hover {
+				color: #7a7a7a;
+			}
 		}
 
 		& li:nth-child(2) {

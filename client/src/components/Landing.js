@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './styles/landing.scss';
 import Header from './Header';
 import Article from './Article';
@@ -8,6 +9,8 @@ import Footer2 from './Footer2';
 import Outro from './Outro';
 import {introText, showUp, bigTxtAnim} from '../utils/helpers';
 import {effect} from '../utils/blips';
+
+
 
 class Landing extends Component {
   componentDidMount() {
@@ -20,14 +23,6 @@ class Landing extends Component {
     return (
 		<div>
 			<div className="contentHero">
-				<div className="overlayMenu">
-					<div className="submenu">
-						<p>Company</p>
-						<p>Capabilities</p>
-						<p>Contact</p>
-					</div>
-					<div className="socialOverlay"></div>
-				</div>
 				<Header />
 				<canvas id="bubble"></canvas>
 				<div className="titleWrap">
@@ -50,7 +45,7 @@ class Landing extends Component {
 				</div>
 				<div className="r-intro">
 					<p className="r-t-intro">If your looking to build your company site or integrate an ecommerce online, you can shoot us an email or click the contact button and fill out the form to get started right away.</p>
-					<div className="quotebutton"><p>CONTACT</p><i className="fa fa-long-arrow-right"></i></div>
+					<div className="quotebutton"><Link to="/contact"><p>CONTACT</p><i className="fa fa-long-arrow-right"></i></Link></div>
 				</div>
 			</div>
 			<div className="sectionHolder">

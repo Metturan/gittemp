@@ -1,7 +1,7 @@
 import React from 'react';
 import '../utils/servicesHelper';
 import './styles/slides.scss';
-import mac4 from './imgs/mac4change.jpg';
+import mac4 from './imgs/mac4change1.jpg';
 
 const Slides = () => {
 	return (

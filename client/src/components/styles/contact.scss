@@ -35,6 +35,18 @@
 	}
 }
 
+.FormGroup {
+	position: relative;
+
+	.submitOver {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
 .formLayout {
 	width: 100%;
 	padding-left: 100px;
@@ -84,6 +96,7 @@
 		letter-spacing: 0.5px;
 		display: block;
 		cursor: pointer;
+		border-radius: 0px;
 	}
 
 	& .descriptionRow {

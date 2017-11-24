@@ -22,45 +22,6 @@
 	// display: none;
 }
 
-.overlayMenu {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom:0;
-	right: 0;
-	width: 100%;
-	background-color: #1d1d1d;
-	z-index: 5;
-	opacity: 0;
-	visibility: hidden;
-	transition: 0.3s all ease;
-	display: none;
-
-	&.menu {
-		opacity: 1;
-		visibility: visible;
-	}
-
-	& .submenu {
-		font-family: inherit;
-		text-transform: uppercase;
-		font-size: 30px;
-		margin-top: 30px;
-		line-height: 1.5;
-		padding-left: 30px;
-		color: white;
-		transition: 0.5s all ease;
-		transition-delay: 0.3s;
-		opacity: 0;
-		transform: translateY(-20%);
-
-		&.menu {
-			transform: translateY(0%);
-			opacity: 1;
-		}
-	}
-}
-
 .o-headline {
 	display: block;
 	overflow: hidden;
@@ -101,7 +62,7 @@
 		right: 8%;
 
 		& .r-t-intro {
-			color: #4b4b4b;
+			color: #6e6e6e;
 			max-width: 300px;
 			font-size: 18px;
 			font-family: 'sofiaproregular';
@@ -112,17 +73,17 @@
 		& .quotebutton { 
 			height: 50px;
 			background-color: #fff;
-			width: 160px;
+			width: 170px;
 			border: 1px solid #fff;
 			line-height: 45px;
 			font-family: 'sofiabold';
 			font-size: 12px;
 			transition: all 1s ease;
-			// text-align: center;
 			letter-spacing: 1px;
 			transition: all 0.2s linear;
 			cursor: pointer;
 			position:relative;
+			// border-radius: 45px;
 
 			& p {
 				display: inline-block;
