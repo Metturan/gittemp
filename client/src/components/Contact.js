@@ -3,12 +3,14 @@ import Select from 'react-select';
 import axios from 'axios';
 import './styles/select.scss';
 import {withRouter} from 'react-router-dom';
-import {TweenMax, Power2} from 'gsap';
+import {TweenMax, Power2, Circ} from 'gsap';
+import SplitText from '../utils/SplitText';
 import Header from './Header';
 import './styles/contact.scss';
 import {introContact} from '../utils/contactHelper';
 import {budgetOptions, projectOptions, isValidEmail, required, longerThan} from '../utils/formHelper';
 
+const removeElements = (elms) => Array.from(elms).forEach(el => el.remove());
 
 function validate(inputs) {
   return {
@@ -27,6 +29,8 @@ function validate(inputs) {
 class Contact extends Component {
 	  componentDidMount() {
 	  	introContact();
+	  	const els = document.getElementsByTagName('label');
+	  	console.log(els);
 	  }
 	  constructor(props) {
 	    super(props);
@@ -97,13 +101,56 @@ class Contact extends Component {
 	      return;
 	    }
 
+	    const confirmMsg = new SplitText('.confirmMsg', {type: 'words'})
+
+	    document.querySelector('.closeBox').addEventListener('click', function() {
+		    TweenMax.to('.confirmStr', 0.5, {autoAlpha: 0, ease:Power2.easeOut});
+	    	TweenMax.to('.FormGroup', 0.5, {autoAlpha: 1, ease:Circ, delay: 0.4});
+	    });
+
 	    const {email, name, company, phone, budget, type, details} = this.state.fields;
-	    axios.post('api/contact', {email, name, company, phone, budget, type, details});
+	    axios.post('api/contact', {email, name, company, phone, budget, type, details})
+	    .then((response) => {
+	    	setTimeout(()=> {
+		    	this.setState({
+		    		fields: {
+			          name: '',
+			          email: '',
+			          company: '',
+			          phone: '',
+			          type: '',
+			          budget: '',
+			          details: '',
+			        },
+			        touched: {
+			          email: false,
+			          name: false,
+			          budget: false,
+			          details: false,
+			        },
+			        errors: {
+			          email: null,
+			          name: null,
+			          details: null,
+			        }
+			    });
+	    	}, 200)
+		    TweenMax.to('.FormGroup', 0.5, {autoAlpha: 0, ease:Circ});
+		    TweenMax.to('.confirmStr', 0.5, {autoAlpha: 1});
+		    TweenMax.staggerFrom(confirmMsg.words, 0.5, {autoAlpha: 0, delay: 0.5, ease:Power2.easeOut, y: 40, }, 0.05);
+		    TweenMax.from('.closeBox', 0.5, {delay: 0.8, autoAlpha: 0, y: 40, ease:Power2.easeOut});
+
+		    setTimeout(() => {
+			    const els = document.getElementsByTagName('label');
+			    for(var i=0; i< els.length; i++) {
+				    els[i].classList.remove('active');
+			    }
+		    }, 400)
+	    });
 
 	    // return this.props.history.push('/');
-	    TweenMax.to('.submitOver', 0.4, {autoAlpha: 1, ease:Power2.easeNone})
-
 	  }
+
 	  handleBlur = (e) => {
 	    this.setState({ touched: {...this.state.touched, [e.target.id]: true} });
 
@@ -149,10 +196,14 @@ class Contact extends Component {
 						<div className="dash"></div>
 					</div>
 					<div className="formLayout">
+					<div className="submitOver">
+						<div className="confirmStr">
+							<div className="confirmWrap">
+								<div className="closeBox">X</div>
+								<span className="confirmMsg">Nice to meet you. We will be in contact with you shortly.</span>
+							</div>
+						</div>
 					    <div className="FormGroup">
-					    	<div className="submitOver">
-
-					    	</div>
 					        <form onSubmit={this.handleSubmit} >
 					        	<div className={'formRow ' + (errors.name && this.state.touched.name ? "errorInfo" : null) }>
 						          <div className={'formInput fl ' + (errors.name && this.state.touched.name ? 'mv' : null)}>
@@ -247,6 +298,7 @@ class Contact extends Component {
 						                className={errors.details && this.state.touched.details ? 'mark' : null }
 						                name="projectDetails" 
 						                id="details" 
+						                value={this.state.fields.details}
 						                onFocus={this.focusLabel}
 						                onChange={this.handleDescriptionChange} 
 						                onBlur={this.handleBlur}
@@ -256,6 +308,7 @@ class Contact extends Component {
 					          </div>
 					            <input className="submit" type="submit" value="SEND"/>
 					        </form>
+						    </div>
 					    </div>
 					</div>
 				</div>

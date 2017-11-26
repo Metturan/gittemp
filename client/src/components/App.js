@@ -4,10 +4,9 @@ import './styles/app.scss';
 import 'font-awesome/css/font-awesome.min.css'
 import Landing from './Landing';
 import Company from './Company';
-import Services from './Services';
+import Services2 from './Services2';
 import Contact from './Contact';
 import ScrollToTop from './ScrollToTop';
-
 
 class App extends Component {
   render() {
@@ -17,7 +16,7 @@ class App extends Component {
 	      	<ScrollToTop>
 		        <Route exact path="/" component={Landing}/>
 		        <Route exact path="/company" component={Company} />
-		        <Route exact path="/services" component={Services} />
+		        <Route exact path="/services" component={Services2} />
 		        <Route exact path="/contact" component={Contact} />
 		    </ScrollToTop>
 	      </div>

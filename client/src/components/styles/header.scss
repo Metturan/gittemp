@@ -3,8 +3,8 @@
 	right: 0%;
 	padding-right: 6%;
 	padding-left: 6%;
-	top: 13px;
-	height: 90px;
+	top: 0px;
+	height: 102px;
 	box-sizing: border-box;
 	cursor: pointer;
 	z-index: 6;
@@ -29,7 +29,6 @@
 		& .top {
 			height: 3px;
 			position: absolute;
-			// background-color: #fff;
 			top: 2px;
 			left: 0;
 			width: 100%;
