@@ -6,7 +6,7 @@ function random(min, max){
 }
 
 export function showUp() {
-	function debounce(func, wait = 10, immediate = true) {
+	function debounce(func, wait = 5, immediate = true) {
 		var timeout;
 		return function() {
 			var context = this, args = arguments;
