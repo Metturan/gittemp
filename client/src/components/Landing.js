@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './styles/landing.scss';
 import Header from './Header';
-import Article from './Article';
+// import Article from './Article';
 import Section100 from './Section100';
 import Section2v0 from './Section2v0';
 import Footer2 from './Footer2';
@@ -49,7 +49,6 @@ class Landing extends Component {
 				</div>
 			</div>
 			<div className="sectionHolder">
-				<Article />
 				<Section100 />
 			</div>
 			<Section2v0 />

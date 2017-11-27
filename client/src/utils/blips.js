@@ -15,6 +15,7 @@ export function effect() {
 
 	// var divider = 4;
 	var cw = canvas.width = window.innerWidth;
+	var canvasWidth = window.innerWidth * 0.6;
 	var ch = canvas.height = window.innerHeight;
 
 	var pi2 = Math.PI * 2;
@@ -73,7 +74,7 @@ export function effect() {
     while (i--) {
       blips[i].render(i);
     }
-    blips.push(new Blip(rand(0, 800), rand(0, ch)));
+    blips.push(new Blip(rand(0, canvasWidth), rand(0, ch)));
     return globalTick++;
   };
 
