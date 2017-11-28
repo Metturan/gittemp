@@ -8,6 +8,7 @@ class Section100 extends React.Component {
 			<div>
 				<div className="section100">
 					<div className="vidCont">
+						<div className="vidOverlay"></div>
 						<div className="vidTitle aniIn">
 							<h1 className="vTitle">Be Bold<br />Be Engaging</h1>
 							<div className="dash"></div>

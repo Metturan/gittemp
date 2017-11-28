@@ -232,10 +232,38 @@
 
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $mobile: "(min-width: 320px) and (max-width: 768px)";
+$desktop: "(min-width: 1400px)";
+
+@media #{$desktop} {
+	body {
+		.topSectServices .titleServices h1 {
+			font-size: 150px;
+		}
+		.gridSection .contentSection .servicesList .section {
+			max-width: 1200px;
+		}
+		.gridSection .gridContainer {
+			max-width: 1600px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
 
 @media #{$tablet} {
 	body {
-
+		.gridSection .contentSection .whatWeDo {
+			max-width: 670px;
+		}
+		.gridSection .contentSection .servicesList .section .center {
+			width: 55%;
+		}
+		.gridSection .contentSection .servicesList .section .rightShade {
+			width: 45%;
+		}
+		.gridSection .contentSection .servicesList .section .rightGrad {
+			width: 45%;
+		}
 	}
 }
 

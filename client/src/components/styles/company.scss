@@ -320,6 +320,27 @@
 
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $mobile: "(min-width: 320px) and (max-width: 768px)";
+$desktop: "(min-width: 1400px)";
+
+@media #{$desktop} {
+	body {
+		.holder {
+			padding-top: 390px;
+		}
+		.companyPage .contentContainer p {
+			font-size: 41px;
+		}
+		.ideology .ideologyPrint {
+			max-width: 395px;
+		}
+		.ideology .ideologyPrint h1 {
+			font-size: 75px;
+		}
+		.ideology .ideologyPrint p {
+			font-size: 20px;
+		}
+	}
+}
 
 @media #{$tablet} {
 	body {
