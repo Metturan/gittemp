@@ -270,6 +270,7 @@ $desktop: "(min-width: 1400px)";
 @media #{$mobile} {
 	.gridSection .contentSection .whatWeDo {
 		max-width: 100%;
+		margin: 0 auto 20px auto;
 	} 
 	.gridSection .contentSection .whatWeDo p {
 		font-size: 23px;
@@ -287,10 +288,11 @@ $desktop: "(min-width: 1400px)";
 		display: block;
 		margin-bottom: 20px;
 		padding-right: 0;
+		text-align: left;
 	}
 
 	.topSectServices {
-		height: 80vh;
+		height: 85vh;
 
 		.titleServices {
 			position: relative;
