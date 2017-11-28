@@ -10,8 +10,6 @@ import Outro from './Outro';
 import {introText, showUp, bigTxtAnim} from '../utils/helpers';
 import {effect} from '../utils/blips';
 
-
-
 class Landing extends Component {
   componentDidMount() {
   	effect();

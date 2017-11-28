@@ -268,7 +268,30 @@ $desktop: "(min-width: 1400px)";
 }
 
 @media #{$mobile} {
+	.gridSection .contentSection .whatWeDo {
+		max-width: 100%;
+	} 
+	.gridSection .contentSection .whatWeDo p {
+		font-size: 23px;
+	}
+	.gridSection .contentSection .whatWeDo .whatButton {
+		padding: 18px 0px;
+	}
+	.gridSection .contentSection .servicesList .section .center {
+		width: 100%;
+		padding: 75px 0px 50px 0;
+		display: block;
+	}
+	.gridSection .contentSection .servicesList .section .rightShade {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		padding-right: 0;
+	}
+
 	.topSectServices {
+		height: 80vh;
+
 		.titleServices {
 			position: relative;
 			top: auto;

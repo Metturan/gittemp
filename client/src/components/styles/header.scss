@@ -267,3 +267,21 @@
 		}
 	}
 }
+
+$mobile: "(min-width: 320px) and (max-width: 768px)";
+
+@media #{$mobile} {
+	body {
+		.navWrap h1 {
+			margin: 13px auto 0 auto;
+		}
+		.overlayMenu .submenu {
+			padding-right: 40px;
+			font-size: 30px;
+		}
+		.overlayMenu .socialSubmenu {
+			font-size: 25px;
+			margin-top: 43px;
+		}
+	}
+}
