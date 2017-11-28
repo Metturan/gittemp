@@ -375,7 +375,7 @@ $desktop: "(min-width: 1400px)";
 			padding-bottom: 35px;
 		}
 		.holder {
-			padding-top: 0;
+			padding-top: 60px;
 		}
 		.coTitleBox {
 			background-color: transparent;
@@ -393,14 +393,15 @@ $desktop: "(min-width: 1400px)";
 				}
 			}
 			.companyHero {
-				height: 65vh;
+				height: 41vh;
 				
 				.bottomBox {
 					width: 80%;
-					position: static;
+					position: absolute;
 					transform: translateY(0);
 					height: auto;
 					padding: 20px 0;
+					top: 70%;
 
 					.bottomBoxinner {
 						position: static;
