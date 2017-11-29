@@ -10,6 +10,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	padding-bottom: 100px;
 
 	& .errMark {
 		color: #c70202;
@@ -22,7 +23,7 @@
 	}
 
 	& .contactTitle {
-		padding-top: 150px;
+		padding-top: 90px;
 
 		& h1 {
 			font-family: 'trump';
@@ -137,7 +138,7 @@
 	}
 
 	& .submit {
-		margin: 30px auto 100px auto;
+		margin: 30px auto 0px auto;
 		width: 200px;
 		border: none;
 		height: 60px;
@@ -204,6 +205,8 @@
 			font-family: 'sofialight';
 			outline: none;
 			box-sizing: border-box;
+			border-radius: 0px;
+			appearance: none;
 
 			&.mark {
 				border: 1px solid #c70202;
@@ -268,7 +271,7 @@ $desktop: "(min-width: 1400px)";
 	}
 	.contactContainer {
 		padding-bottom: 100px;
-		
+
 		.errMark {
 			padding: 3px 0;
 			width: 100%;
