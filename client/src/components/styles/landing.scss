@@ -257,7 +257,7 @@ $desktop: "(min-width: 1450px)";
 @media #{$mobile} {
 	body {
 		.contentHero {
-			height: 90vh;
+			height: 87vh;
 		}
 		.section2Wrap {
 			padding: 100px 0 0 0;
@@ -380,20 +380,6 @@ $desktop: "(min-width: 1450px)";
 		}
 		.mobileOnly {
 			display: block;
-		}
-		.navWrap {
-			padding: 20px 0;
-			
-			& h1 {
-				float: none;
-				margin: 0 auto;
-				width: 96px;
-				font-size: 40px;
-			}
-
-			& .rightNav {
-				display: none;
-			}
 		}
 		.titleWrap {
 			padding-left: 0;

@@ -188,7 +188,7 @@ class Contact extends Component {
 	      details: this.state.fields.details,
 	    });
 		return (
-			<div>
+			<div className="contactHead">
 				<Header />
 				<div className="contactContainer">
 					<div className="contactTitle">
