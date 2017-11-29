@@ -256,6 +256,9 @@ $desktop: "(min-width: 1450px)";
 
 @media #{$mobile} {
 	body {
+		.contentHero {
+			height: 90vh;
+		}
 		.section2Wrap {
 			padding: 100px 0 0 0;
 		}
