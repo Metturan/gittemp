@@ -272,8 +272,19 @@ $mobile: "(min-width: 320px) and (max-width: 768px)";
 
 @media #{$mobile} {
 	body {
-		.navWrap h1 {
-			margin: 13px auto 0 auto;
+		.navWrap {
+			padding: 20px 0;
+			
+			& h1 {
+				float: none;
+				margin: 0 auto;
+				width: 96px;
+				font-size: 40px;
+			}
+
+			& .rightNav {
+				display: none;
+			}
 		}
 		.overlayMenu .submenu {
 			padding-right: 40px;
