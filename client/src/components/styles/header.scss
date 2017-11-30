@@ -1,3 +1,7 @@
+.openingHead {
+	position: relative;
+}
+
 .menuHolder {
 	position: absolute;
 	right: 0%;
@@ -293,6 +297,9 @@ $mobile: "(min-width: 320px) and (max-width: 768px)";
 		.overlayMenu .socialSubmenu {
 			font-size: 25px;
 			margin-top: 43px;
+		}
+		.m-over::before, .m-over::after {
+			display: none;
 		}
 	}
 }

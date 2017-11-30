@@ -36,7 +36,7 @@ class Services2 extends Component {
 			          <div className="whatWeDo">
 			            <h3 className="anim"><span></span>SERVICES & PRICING</h3>
 			            <p className="anim">We’re an experience design agency that builds brands, platforms,
-			& eCommerce flagships that help businesses succeed in digital culture.</p>
+			& eCommerce stores that help businesses drive sales in a digital world.</p>
 			            <div className="whatButton anim">OUR SERVICES <i className="fa fa-long-arrow-right "></i></div>
 			          </div>
 			          <div className="servicesList">

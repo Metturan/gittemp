@@ -46,10 +46,10 @@ class Landing extends Component {
 					<div className="quotebutton"><Link to="/contact"><p>CONTACT</p><i className="fa fa-long-arrow-right"></i></Link></div>
 				</div>
 			</div>
+			<Section2v0 />
 			<div className="sectionHolder">
 				<Section100 />
 			</div>
-			<Section2v0 />
 			<div className="footerMain">
 				<Footer2 />
 				<Outro />

@@ -5,8 +5,22 @@ function random(min, max){
 	return (Math.random() * (max - min)) + min;
 }
 
+export function scrollBehaviour() {
+	let lastScrolltop = 0;
+
+	window.addEventListener('scroll', function() {
+		let st = window.pageYOffset || document.documentElement.scrolltop;
+		if (st > lastScrolltop) {
+			document.getElementById('bottommenu').style.bottom = "-100%";
+		} else {
+			document.getElementById('bottommenu').style.bottom="0";
+		}
+		lastScrolltop = st;
+	});
+}
+
 export function showUp() {
-	function debounce(func, wait = 5, immediate = true) {
+	function debounce(func, wait = 8, immediate = true) {
 		var timeout;
 		return function() {
 			var context = this, args = arguments;

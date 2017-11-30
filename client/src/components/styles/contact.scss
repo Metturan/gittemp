@@ -264,6 +264,10 @@ $desktop: "(min-width: 1400px)";
 }
 
 @media #{$mobile} {
+	.confirmStr .confirmWrap {
+		width: 175px;
+		line-height: 1.2;
+	}
 	.mobileOnly {
 		display: block;
 	}
