@@ -20,7 +20,7 @@ export function scrollBehaviour() {
 }
 
 export function showUp() {
-	function debounce(func, wait = 8, immediate = true) {
+	function debounce(func, wait = 12, immediate = true) {
 		var timeout;
 		return function() {
 			var context = this, args = arguments;
